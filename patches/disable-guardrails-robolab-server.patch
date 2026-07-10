@@ -1,0 +1,12 @@
+diff --git a/cosmos_framework/scripts/action_policy_server_robolab.py b/cosmos_framework/scripts/action_policy_server_robolab.py
+index f76989a..692a102 100644
+--- a/cosmos_framework/scripts/action_policy_server_robolab.py
++++ b/cosmos_framework/scripts/action_policy_server_robolab.py
+@@ -421,6 +421,7 @@ class RobolabPolicyService:
+             "checkpoint_path": args.checkpoint_path,
+             "output_dir": args.output_dir or _DEFAULT_ROBOLAB_OUTPUT_DIR,
+             "sampler": args.sampler,
++            "guardrails": False,
+         }
+         if args.experiment is not None:
+             setup_overrides["experiment"] = args.experiment
